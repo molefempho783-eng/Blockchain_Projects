@@ -1,3 +1,12 @@
+/*
+This is a smart contract wallet with:
+👑 Owner control
+👥 Guardian-based recovery (social recovery)
+💸 Allowance system (like MetaMask spending limits)
+🔐 Permissioned transfers
+🤝 Contract interaction support
+*/
+
 //SPDX-License-Identifier: MIT
  
 pragma solidity 0.8.15;
@@ -66,4 +75,5 @@ contract SmartContractWallet {
     }
  
     receive() external payable {}
+
 }
