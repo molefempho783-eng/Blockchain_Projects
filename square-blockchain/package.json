@@ -1,0 +1,29 @@
+{
+  "name": "square-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.cjs --network polygonAmoy",
+    "test:escrow": "hardhat run scripts/test-escrow.cjs --network polygonAmoy",
+    "test": "hardhat test test/MerchantEscrow.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@types/node": "^22.19.13",
+    "chai": "^4.5.0",
+    "dotenv": "^17.3.1",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.22.3",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}
